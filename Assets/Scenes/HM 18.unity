@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 194431512}
   - component: {fileID: 194431513}
   - component: {fileID: 194431514}
+  - component: {fileID: 194431515}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -432,7 +433,7 @@ Transform:
   - {fileID: 1780607625}
   - {fileID: 1287573974}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &194431509
 Rigidbody2D:
@@ -578,6 +579,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23187092, y: 0.18363261}
   m_EdgeRadius: 0
+--- !u!114 &194431515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194431505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ee08a44dd0eee4fb3f6159dc055eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &256432163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1157,7 @@ Transform:
   m_Children:
   - {fileID: 464996293}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833987364
 GameObject:
@@ -1158,7 +1171,7 @@ GameObject:
   - component: {fileID: 833987365}
   m_Layer: 0
   m_Name: DeathTrigger
-  m_TagString: Untagged
+  m_TagString: DeathTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1364,7 +1377,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1147068101
 GameObject:
@@ -1446,7 +1459,7 @@ Transform:
   m_LocalScale: {x: 2.4483583, y: 2.3714693, z: 0.82529116}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281400467
 GameObject:
@@ -1960,8 +1973,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 194431512}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+      - m_Target: {fileID: 194431515}
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -2156,7 +2169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2296,7 +2309,7 @@ RectTransform:
   - {fileID: 700208241}
   - {fileID: 1674548182}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2340,7 +2353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_LocalPosition.x

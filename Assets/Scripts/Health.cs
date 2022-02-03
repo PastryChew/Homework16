@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -46,12 +45,16 @@ public class Health : MonoBehaviour
     {
         if (!isAlive)
         {
-            StartCoroutine(deadActive());
 
             if (Player)
             {
+                StartCoroutine(deadActive());
                 GetComponent<PlayerMovement>().anim.SetBool("isDead", true);
                 
+            }
+            else
+            {
+                GameObject.Destroy(gameObject);
             }
            
         }
@@ -60,20 +63,11 @@ public class Health : MonoBehaviour
     IEnumerator deadActive()
     {
         yield return new WaitForSeconds(1);
-        if (Player)
-        {
-            gameOverScreen.SetActive(true);
             Player.SetActive(false);
-        }
-        else
-        {
-            GameObject.Destroy(gameObject);
-        }
+            gameOverScreen.SetActive(true);
+        
     }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    
 
 }

@@ -17,10 +17,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform GroundColliderTransform;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private AnimationCurve curve;
+    [SerializeField] public Animator anim;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        
     }
     private void FixedUpdate()
     {
@@ -31,12 +34,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isJumpButtonPressed)
         {
+            anim.SetTrigger("isJumping");
             Jump();
         }
+        
+        
 
         if (Mathf.Abs(Direction) > 0.01f)
         {
             HorizontalMovement(Direction);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
         }
     }
 
@@ -46,9 +56,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
         }
+        
     }
     private void HorizontalMovement(float Direction)
     {
+        anim.SetBool("isRunning", true);
         rb.velocity = new Vector2(curve.Evaluate(Direction), rb.velocity.y);
     }
 }

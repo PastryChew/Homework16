@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
     [SerializeField] private TextMeshProUGUI textcurrentHealth;
     [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject gameOverScreen;
     private float currentHealth;
     private bool isAlive;
 
@@ -49,7 +51,7 @@ public class Health : MonoBehaviour
             if (Player)
             {
                 GetComponent<PlayerMovement>().anim.SetBool("isDead", true);
-
+                
             }
            
         }
@@ -58,6 +60,20 @@ public class Health : MonoBehaviour
     IEnumerator deadActive()
     {
         yield return new WaitForSeconds(1);
-        GameObject.Destroy(gameObject);
+        if (Player)
+        {
+            gameOverScreen.SetActive(true);
+            Player.SetActive(false);
+        }
+        else
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }

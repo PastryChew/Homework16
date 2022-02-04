@@ -62,5 +62,14 @@ public class PlayerMovement : MonoBehaviour
     {
         anim.SetBool("isRunning", true);
         rb.velocity = new Vector2(curve.Evaluate(Direction), rb.velocity.y);
+
+        if (Direction < 0)
+        {
+            rb.transform.rotation = Quaternion.Euler(0,180,0);
+        }
+        else
+        {
+            rb.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }

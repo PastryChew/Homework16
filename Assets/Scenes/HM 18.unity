@@ -2139,33 +2139,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6676014237968666346, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014238561219965, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239057082532, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239293590722, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239577236912, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272262, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_Name
       value: Platform (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239582272262, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_RootOrder
@@ -2323,33 +2299,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6676014237968666346, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014238561219965, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239057082532, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239293590722, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239577236912, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272262, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_Name
       value: Platform
-      objectReference: {fileID: 0}
-    - target: {fileID: 6676014239582272262, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6676014239582272263, guid: b6946b4168f32614aaf6ee42bca25bf0, type: 3}
       propertyPath: m_RootOrder

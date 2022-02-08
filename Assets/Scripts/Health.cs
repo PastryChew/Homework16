@@ -54,7 +54,9 @@ public class Health : MonoBehaviour
             }
             else
             {
-                GameObject.Destroy(gameObject);
+                GetComponent<EnemyController>().DeathEnemy();
+              
+                //Destroy(gameObject);
             }
            
         }

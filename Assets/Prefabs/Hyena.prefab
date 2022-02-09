@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 8922750226204889988}
   - component: {fileID: 520060894137953216}
   - component: {fileID: 315222548}
+  - component: {fileID: 2706832646611774488}
   m_Layer: 0
   m_Name: Hyena
   m_TagString: Damagable
@@ -343,6 +344,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0054633617, y: 0.15347862}
   m_Size: {x: 0.30695724, y: 0.30695724}
   m_Direction: 0
+--- !u!114 &2706832646611774488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577373617020942022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44530a892a6d41d45909d2737f6c4b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 25
 --- !u!1 &4612002440389088152
 GameObject:
   m_ObjectHideFlags: 0

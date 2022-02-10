@@ -72,4 +72,19 @@ public class PlayerMovement : MonoBehaviour
             rb.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("PlatformSlide"))
+        {
+            transform.parent = collision.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("PlatformSlide"))
+        {
+            transform.parent = null;
+        }
+    }
 }

@@ -13,7 +13,7 @@ public class DamageDealler : MonoBehaviour
             collision.gameObject.GetComponent<Health>().TakeDamage(Damage);
             
         }
-        if (!collision.CompareTag("Player") && !collision.CompareTag("Weapon"))
+        if (!collision.CompareTag("Player") && !collision.CompareTag("Weapon") && !collision.CompareTag("EnemyStopper"))
         {
             Destroy(gameObject);
         }

@@ -6,12 +6,12 @@ public class OpenChest : MonoBehaviour
 {
     private Animator anim;
     [SerializeField] private bool isPlayer = false;
-    
-    
+   
 
     private void Start()
     {
        anim = GetComponent<Animator>();
+        
        
     }
 
@@ -19,7 +19,7 @@ public class OpenChest : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-
+           
             isPlayer = true;
         }
     }
@@ -37,8 +37,11 @@ public class OpenChest : MonoBehaviour
     IEnumerator ChestDestroy()
     {
         yield return new WaitForSeconds(1);
+        
         Destroy(gameObject);
     }
+
+    
 
     
 }

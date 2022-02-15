@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  EventSystem: {fileID: 0}
 --- !u!95 &6267166136001095059
 Animator:
   serializedVersion: 3

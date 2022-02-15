@@ -6,7 +6,7 @@ public class OpenChest : MonoBehaviour
 {
     private Animator anim;
     [SerializeField] private bool isPlayer = false;
-   
+    [SerializeField] private GameObject EventSystem;
 
     private void Start()
     {
@@ -29,7 +29,7 @@ public class OpenChest : MonoBehaviour
         if (isPlayer && Input.GetKeyDown(KeyCode.E))
         {
             anim.SetBool("isOpen", true);
-            
+            EventSystem.GetComponent<PointController>().PointPlus();
             StartCoroutine(ChestDestroy());
         }
     }

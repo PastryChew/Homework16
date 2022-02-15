@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PointController : MonoBehaviour
 {
-    public int currentpoint;
+    public int currentpoint = 0;
     public TextMeshProUGUI textpoint;
 
     // Start is called before the first frame update

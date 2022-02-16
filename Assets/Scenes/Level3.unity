@@ -422,6 +422,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 520060894137953216, guid: 1d0a9d803757db14d848e49eaac9e38d, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 1707196759}
     - target: {fileID: 577373617020942022, guid: 1d0a9d803757db14d848e49eaac9e38d, type: 3}
       propertyPath: m_Name
       value: Hyena
@@ -2368,11 +2372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.942047
+      value: -6.053224
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.516526
+      value: -1.5200523
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalPosition.z

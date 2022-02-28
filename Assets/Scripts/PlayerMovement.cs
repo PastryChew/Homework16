@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AnimationCurve curve;
     [SerializeField] public Animator anim;
 
+    [SerializeField] public bool rotatePLayer = true;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -66,9 +68,11 @@ public class PlayerMovement : MonoBehaviour
         if (Direction < 0)
         {
             rb.transform.rotation = Quaternion.Euler(0,180,0);
+            rotatePLayer = true;
         }
         else
         {
+            rotatePLayer = false;
             rb.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }

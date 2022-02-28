@@ -185,7 +185,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2e76f1921c130d142a7cb94dbe735bf7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -256,6 +256,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   anim: {fileID: 3898734507147162982}
+  rotatePLayer: 1
 --- !u!114 &3898734507147162988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +288,8 @@ MonoBehaviour:
   bullet: {fileID: 9058553558835109738, guid: d5e42cad06c7f944b9aa94553d38ceff, type: 3}
   fireSpeed: 10
   firePoint: {fileID: 3898734507710699005}
+  playerTransform: {fileID: 3898734507147162976}
+  PM: {fileID: 3898734507147162981}
 --- !u!61 &3898734507147162990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -369,9 +372,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03734988, y: 0.061564654}
+  m_Offset: {x: -0.037349876, y: 0.059818394}
   serializedVersion: 2
-  m_Radius: 0.05665347
+  m_Radius: 0.058399733
 --- !u!1 &3898734507309551778
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +418,7 @@ GameObject:
   - component: {fileID: 3898734507710699005}
   m_Layer: 0
   m_Name: FirePoint
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,6 +503,14 @@ PrefabInstance:
     - target: {fileID: 9058553558835109738, guid: d5e42cad06c7f944b9aa94553d38ceff, type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058553558835109738, guid: d5e42cad06c7f944b9aa94553d38ceff, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058553558835109739, guid: d5e42cad06c7f944b9aa94553d38ceff, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e42cad06c7f944b9aa94553d38ceff, type: 3}

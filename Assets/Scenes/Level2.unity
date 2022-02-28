@@ -787,7 +787,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313417809}
-  m_LocalRotation: {x: 0.010275062, y: -0.00032111953, z: 0.0000032996968, w: 0.9999472}
+  m_LocalRotation: {x: 0.010275042, y: -0.00032115396, z: 0.000003300044, w: 0.9999472}
   m_LocalPosition: {x: 6.26, y: -0.94, z: -15.56923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7007,18 +7007,6 @@ PrefabInstance:
       propertyPath: textcurrentHealth
       value: 
       objectReference: {fileID: 508549426}
-    - target: {fileID: 3898734507297919802, guid: 9c106eee30c6cd44192c162a028e1f9e, type: 3}
-      propertyPath: m_Radius
-      value: 0.058399733
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898734507297919802, guid: 9c106eee30c6cd44192c162a028e1f9e, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.037349876
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898734507297919802, guid: 9c106eee30c6cd44192c162a028e1f9e, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.059818394
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c106eee30c6cd44192c162a028e1f9e, type: 3}
 --- !u!95 &881328963 stripped
@@ -7482,15 +7470,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.010275062
+      value: 0.010275042
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00032111953
+      value: -0.00032115396
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000032996968
+      value: 0.000003300044
       objectReference: {fileID: 0}
     - target: {fileID: 3396177423597170026, guid: 8acc3bd407d479d4093e00d8d3228b65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11667,6 +11655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e5bd9a8002e77479115bf0dcfada29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 0
   textNote: {fileID: 216953009}
 --- !u!61 &2042582400
 BoxCollider2D:

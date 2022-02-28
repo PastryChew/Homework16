@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class BonfireNote : MonoBehaviour
 {
-    private bool isPlayer = false;
-    public Image textNote;
+    [SerializeField]  private bool isPlayer = false;
+    [SerializeField]  public Image textNote;
 
     // Update is called once per frame
     void Update()
